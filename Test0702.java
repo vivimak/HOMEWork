@@ -1,3 +1,6 @@
+/*
+我是作业内容
+*/
 import java.util.Scanner;
 class Number{
 	private int n1;
