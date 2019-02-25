@@ -37,7 +37,10 @@ class Test0702{
 		int n1=in.nextInt();
 		System.out.println("请为n2赋值：");
 		int n2=in.nextInt();
-		Number number=new Number(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+		//壁虎：传参有误，既然用n1与n2接受了参数，为什么传的时候不是n1和n2呢？
+		//Number number=new Number(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+		//壁虎：正确写法如下
+		Number number=new Number(n1,n2);
 		int sum=number.addition();
 		int sub=number.subtration();
 		int mul=number.multiplication();
