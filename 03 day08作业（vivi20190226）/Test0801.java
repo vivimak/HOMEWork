@@ -1,34 +1,40 @@
 /*
 Day08
-×÷ÒµÒ»£ºÉè¼Æ¡°window»ØÊÕÕ¾¡±³ÌÐò£¬¸Ã³ÌÐò¾ß±¸ÒÔÏÂ¼¸¸ö¹¦ÄÜ
-1.¼ÓÈë»ØÊÕÕ¾
-2.Çå¿Õ»ØÊÕÕ¾
-»ØÊÕÕ¾×î¶àÖ»ÄÜ×°10¸ö£¬ÂúÁËºóÌáÊ¾¡°»ØÊÕÕ¾ÒÑÂú£¬ÇëÇå¿Õ¡±
+ä½œä¸šä¸€ï¼šè®¾è®¡â€œwindowå›žæ”¶ç«™â€ç¨‹åºï¼Œè¯¥ç¨‹åºå…·å¤‡ä»¥ä¸‹å‡ ä¸ªåŠŸèƒ½
+1.åŠ å…¥å›žæ”¶ç«™
+2.æ¸…ç©ºå›žæ”¶ç«™
+å›žæ”¶ç«™æœ€å¤šåªèƒ½è£…10ä¸ªï¼Œæ»¡äº†åŽæç¤ºâ€œå›žæ”¶ç«™å·²æ»¡ï¼Œè¯·æ¸…ç©ºâ€
 
-Í¨¹ý¿ØÖÆÌ¨ÊäÈëÃüÁîÍê³ÉÕâÐ©¹¦ÄÜ*/
+é€šè¿‡æŽ§åˆ¶å°è¾“å…¥å‘½ä»¤å®Œæˆè¿™äº›åŠŸèƒ½*/
 
 
-class windowRecycle{
+class WindowRecycle{
 	
-	//¶¨Òå¾²Ì¬³ÉÔ±±äÁ¿
+	//å®šä¹‰é™æ€æˆå‘˜å˜é‡
 	public static int count=0;
 
-	//¶¨Òå¾²Ì¬·½·¨
+	//å®šä¹‰é™æ€æ–¹æ³•
 	public static void addRecycle(){
-		System.out.println("¼ÓÈë»ØÊÕÏä");
+		if(count<10){
+			count++;
+			System.out.println("å›žæ”¶ç«™å·²æœ‰"+count+"ä¸ªæ–‡ä»¶");
+		}else{
+			System.out.println("å›žæ”¶ç«™å·²æ»¡ï¼Œè¯·æ¸…ç©º");
+		}
 	}
 	public static void cleanRecycle(){
-		System.out.println("ÒÑÇå¿Õ»ØÊÕÏä");
+		count=0;
+		System.out.println("å·²æ¸…ç©ºå›žæ”¶ç®±");
 	}
 
 }
 
 class Test0801{
 	public static void main(String[] args){
-		for(int count=0;count<10;count++){
-			windowRecycle.addRecycle();
-		}
-		System.out.println("»ØÊÕÕ¾ÒÑÂú£¬ÇëÇå¿Õ¡£");
-		windowRecycle.cleanRecycle();
+		WindowRecycle windowRecycle=new WindowRecycle();
+			for(int i=0;i<11;i++){
+				windowRecycle.addRecycle();
+			}
+			windowRecycle.cleanRecycle();
 	}
 }
