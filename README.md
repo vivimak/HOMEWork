@@ -1,5 +1,11 @@
 # Homework
 
+8)2019/03/27: 夺命筛子：
+
+    Question 1:定义一个方法，一般不是要用public void 么？是不是如果这个方法是取一个数字，所以就可以直接用public static int？
+    Question 2:GameMap里面的getType()方法，不是getInstance()里面，为什么不直接写int type=GameMap.getType(js.getPosition());
+    
+
 7）2019/02/27：day10-作业一，命名为InstrumentTest1001.java————————>作业无答案，这样写对否？
 
 --------------day11-作业一，命名为Test1101.java
